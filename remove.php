@@ -6,7 +6,7 @@
 		    mysqli_query($connect, "SET CHARACTER SET UTF8") or
 		        die("Error, ei saa andmebaasi charsetti seatud");
 
-		if (isset($_POST['delete'])){ /* Kommenteeritud keeruline osa pärineb: http://stackoverflow.com/questions/23987602/deleting-mysql-rows-with-checkbox */
+		if (isset($_POST['delete'])){ /* Trükitähtedes kommenteeritud keeruline osa pärineb: http://stackoverflow.com/questions/23987602/deleting-mysql-rows-with-checkbox */
 		    $checkbox = $_POST['checkbox'];
 		    $count = count($checkbox);
 		    $deletioncounter = 0;
