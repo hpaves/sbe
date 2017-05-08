@@ -1,17 +1,27 @@
-<!DOCTYPE html>
-<html>
-	<?php include 'head.php'; ?>
+<?php 
+require_once 'head.php';
 
-	<body>
-		<h1>Simple Back End</h1>
-		
-		<div class="form">
-			<?php include 'form.php'; ?>
-			<br /><br />
-		</div>
-		
-		<?php include 'mysql_output.php'; ?>
 
-		<?php include 'validator.php'; ?>
-	</body>
-</html>
+if (!empty($_GET["p"])) {
+    $page = $_GET["p"];
+} else {
+    $page = "create";
+}
+
+switch ($page) {
+	case 'add':
+		require("add.php");
+		break;
+	case 'upload':
+		require("upload.php");
+		break;
+	case 'remove':
+		require("remove.php");
+		break;
+	default:
+		require("add.php");
+		break;
+}
+
+require_once 'foot.php'; 
+?>

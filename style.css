@@ -14,6 +14,10 @@ p {
     text-align: center;
 }
 
+.center {
+    text-align:center;
+}
+
 
 /* forms */
 
@@ -116,10 +120,21 @@ td.linnuke {
 }
 
 
-/* footer */
+/* sticky footer: http://mystrd.at/modern-clean-css-sticky-footer/ */
 
-.validator {
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+
+.footer {
     position: absolute;
+    left: 0;
     bottom: 0;
+    height: 80px;
     width: 100%;
 }
