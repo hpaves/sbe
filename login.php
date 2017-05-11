@@ -10,8 +10,8 @@
 	//3.1 If the form is submitted
 	if (isset($_POST['username']) and isset($_POST['password'])){
 	//3.1.1 Assigning posted values to variables.
-		$username = $_POST['username'];
-		$password = $_POST['password'];
+		$username = mysqli_real_escape_string($connect, $_POST['username']);
+		$password = mysqli_real_escape_string($connect, $_POST['password']);
 		//3.1.2 Checking the values are existing in the database or not
 		$query = "SELECT * FROM hp_users WHERE username='$username' and passw='$password'";
 		 
@@ -27,7 +27,7 @@
 	}
 	//3.1.4 if the user is logged in...
 	if (isset($_SESSION['username'])){
-	$username = $_SESSION['username'];
+	$username = mysqli_real_escape_string($connect, $_SESSION['username']);
 	header("Location: ?p=add");
 	 
 	} else {
