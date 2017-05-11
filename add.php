@@ -1,3 +1,5 @@
+<?php require 'sessioncheck.php'; ?>
+<?php include 'menu.php'; ?>
 		<div class="form">
 			<form enctype="multipart/form-data" action="?p=upload" method="POST">
 				<label>Toote nimetus:</label>

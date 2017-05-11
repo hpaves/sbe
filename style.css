@@ -80,6 +80,9 @@ td.id {
     width: 15%;
     word-wrap:break-word;
 }
+td.tehniline{
+    width: 0%;
+}
 td.linnuke {
     width: 10%;
     word-wrap:break-word;

@@ -13,13 +13,22 @@ switch ($page) {
 		require("add.php");
 		break;
 	case 'upload':
-		require("upload.php");
+		require("img_upload.php");
+		break;
+	case 'view':
+		require("view.php");
 		break;
 	case 'remove':
 		require("remove.php");
 		break;
+	case 'login':
+		require("login.php");
+		break;
+	case 'logout':
+		require("logout.php");
+		break;
 	default:
-		require("add.php");
+		require("login.php");
 		break;
 }
 

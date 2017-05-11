@@ -26,7 +26,7 @@ if (in_array($_FILES['pilt']["type"], $allowedTypes) && ($_FILES['pilt']["size"]
         }
     }
 } else {
-    echo "<p>Fail ei ole sobivat tüüpi või on liiga suur.</p>";
+    echo "<p>Fail puudub, ei ole sobivat tüüpi või on liiga suur.</p>";
     include 'mysql_nogo.php';
 }
 
