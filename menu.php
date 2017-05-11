@@ -1,3 +1,4 @@
+<?php require 'sessioncheck.php'; ?>
 		<div id="menu">
 			<ul>
 				<li><h3><a href="?p=add">Lisa</a></h3></li>

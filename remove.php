@@ -1,3 +1,4 @@
+		<?php require 'sessioncheck.php'; ?>
 		<?php include 'menu.php'; ?>
 		<?php include 'mysql_credentials.php'; ?>
 

@@ -1,3 +1,4 @@
+		<?php require 'sessioncheck.php'; ?>
 		<?php include 'menu.php'; ?>
 		<?php include 'mysql_credentials.php'; ?>
 
@@ -24,6 +25,6 @@
 		}
 	    mysqli_close($connect);
 
-	    echo '<p class="center">Kui võrgurakendus tundub väga lihtne, siis see on mõeldud kasutamiseks back endina näiteks sellises kontekstis: <a href="http://enos.itcollege.ee/~hpaves/startbootstrap-creative-gh-pages/">http://enos.itcollege.ee/~hpaves/startbootstrap-creative-gh-pages/</a></p>
+	    echo '<p class="center">Kui võrgurakendus tundub väga kole, siis see on mõeldud kasutamiseks back endina näiteks sellises kontekstis: <a href="http://enos.itcollege.ee/~hpaves/startbootstrap-creative-gh-pages/">http://enos.itcollege.ee/~hpaves/startbootstrap-creative-gh-pages/</a></p>
 	    	<p>Antud näidislehe (mis pärineb <a href="https://blackrockdigital.github.io/startbootstrap-creative/">siit</a>) CSS vajab küll samade külgede vahekorraga pilte, kuid mõtte näitab ära.</p>';
 		 ?>

@@ -1,4 +1,5 @@
-<?php 
+<?php require 'sessioncheck.php'; ?>
+<?php
 	include 'mysql_credentials.php';
 
 	$connect = mysqli_connect($host, $user, $pass, $db);
@@ -18,3 +19,13 @@
 		}
 	mysqli_close($connect);
 ?>
+
+<script type="text/javascript">
+    window.setTimeout(function() {
+        window.location.href='?p=add';
+    }, 2000);
+</script>
+
+<noscript>
+    <meta http-equiv="refresh" content="2;url=?p=add" />
+</noscript>

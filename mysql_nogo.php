@@ -1,3 +1,4 @@
+<?php require 'sessioncheck.php'; ?>
 <?php 
 	echo "<p>Andmebaasi ei lisatud midagi.</p>";
 ?>
