@@ -12,8 +12,11 @@
 	//3.1.1 Assigning posted values to variables.
 		$username = mysqli_real_escape_string($connect, $_POST['username']);
 		$password = mysqli_real_escape_string($connect, $_POST['password']);
+		$salt = 'kalakalakalakala'; // pole ilmselt parim praktika
+		$passwordSalted = $password . $salt;
+		$passwordHash = sha1($passwordSalted);
 		//3.1.2 Checking the values are existing in the database or not
-		$query = "SELECT * FROM hp_users WHERE username='$username' and passw='$password'";
+		$query = "SELECT * FROM hp_users WHERE username='$username' and passw='$passwordHash'";
 		 
 		$result = mysqli_query($connect, $query) or die(mysqli_error($connect));
 		$count = mysqli_num_rows($result);
@@ -21,7 +24,7 @@
 			if ($count == 1){
 			$_SESSION['username'] = $username;
 			} else {
-			//3.1.3 If the login credentials doesn't match, he will be shown with an error message.
+			//3.1.3 If the login credentials doesn't match:
 			$fmsg = "Invalid Login Credentials.";
 			}
 	}

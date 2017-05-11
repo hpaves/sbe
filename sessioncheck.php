@@ -8,7 +8,8 @@
 		 
 		} else {
 		// redirect to the login page
-		header("Location: /~hpaves/sbe/?p=login");
+		$rootfolder = file_get_contents('./rootfolder.txt', FILE_USE_INCLUDE_PATH);
+		header('Location: ' . $rootfolder . '');
 		}
 	}
  ?>

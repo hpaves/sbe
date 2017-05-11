@@ -25,7 +25,3 @@
         window.location.href='?p=add';
     }, 2000);
 </script>
-
-<noscript>
-    <meta http-equiv="refresh" content="2;url=?p=add" />
-</noscript>
