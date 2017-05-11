@@ -35,7 +35,7 @@
 	}
 ?>
 <div class="center">
-	<form action="" method="post">
+	<form action="?p=login" method="post">
 		<input class="form" type="text" name="username" placeholder="kasutajanimi" /><br />
 		<input class="form" type="password" name="password" placeholder="parool" /><br />
 		<input type="submit" value="Logi sisse" name="submit"/>
