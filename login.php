@@ -25,7 +25,7 @@
 			$_SESSION['username'] = $username;
 			} else {
 			//3.1.3 If the login credentials doesn't match:
-			$fmsg = "Invalid Login Credentials.";
+			$message = "Vale kasutajanimi või parool.";
 			}
 	}
 	//3.1.4 if the user is logged in...
