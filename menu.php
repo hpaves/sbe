@@ -5,6 +5,8 @@
 				<li>|</li>
 				<li><h3><a href="?p=view">Vaata</a></h3></li>
 				<li>|</li>
+				<li><h3><a href="?p=update">Muuda</a></h3></li>
+				<li>|</li>
 				<li><h3><a href="?p=remove">Kustuta</a></h3></li>
 				<li>|</li>
 				<li><h3><a href="?p=logout">Välju</a></h3></li>

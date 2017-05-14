@@ -21,6 +21,15 @@ switch ($page) {
 	case 'remove':
 		require("remove.php");
 		break;
+	case 'update':
+		require("update.php");
+		break;
+	case 'updateform':
+		require("updateform.php");
+		break;
+	case 'updatesubmit':
+		require("updatesubmit.php");
+		break;
 	case 'login':
 		require("login.php");
 		break;

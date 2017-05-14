@@ -7,9 +7,11 @@
 		$connect = mysqli_connect($host, $user, $pass, $db);
 		    mysqli_query($connect, "SET CHARACTER SET UTF8") or
 		        die("Error, ei saa andmebaasi charsetti seatud");
-		
+
 		$query = "SELECT * FROM hp_test"; /* SELECT FROM THE TABLE */
 		$result = mysqli_query($connect,$query); /* EXECUTE QUERY */
+
+		echo "<form action='?p=updateform' method='POST'>"; /* SUBMIT PAGE ON ITSELF */
 
 		while ($row = mysqli_fetch_array($result)){ /* FETCH ARRAY */
 
@@ -19,14 +21,15 @@
 		    echo "<td class='kirjeldus'>" . htmlspecialchars($row['Kirjeldus']) . '</td>';
 		    echo "<td class='hind'>" . htmlspecialchars($row['Hind']) . ' €' . '</td>';
 		    echo "<td class='pilt'><img src='images/" . htmlspecialchars($row['Pildinimi']) . "' alt=' " . htmlspecialchars($row["id"]) . " '></td>";
+		    echo "<td class='linnuke'><input type='radio' name='checkbox[]' value='$id'>";
 		    echo "</tr></table></div>";
 
 		}
 	    mysqli_close($connect);
 
-	    echo '<p class="center">Kui võrgurakendus tundub väga kole, siis see on mõeldud kasutamiseks back endina. Sellel lehel ei peagi mitte miski (isegi mitte "Vaata" leht) olema avalikult ligipääsetav. Vaatamise päringu saab lisada front endi, näiteks sellises kontekstis: <a href="http://enos.itcollege.ee/~hpaves/startbootstrap-creative-gh-pages/">http://enos.itcollege.ee/~hpaves/startbootstrap-creative-gh-pages/</a></p>
+	    echo '<br><div class="center">
+				<input class="center" name="update" type="SUBMIT" id="update" value="Muuda valitud toodet!">
+			</div>
+	    </form>';
 
-	    	<p>Antud näidislehe CSS vajab küll samade külgede vahekorraga pilte, niisiis konkreetset näidet on lihtne lõhkuda, kuid mõtte näitab ära.</p>
-
-	    	<p>JS kasutus on täiesti minimaalne, sest JS ja PHP sidumise lahendusi me loengus ei käsitlenud ja üleüldse tundus see erinevaid näiteid uurides üks suur turvarisk (XXS ründed).</p>';
 		 ?>
