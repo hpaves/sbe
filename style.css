@@ -55,7 +55,7 @@ textarea {
     width: 200px;
 }
 
-.form img {
+img.updateform {
     display: block;
     margin-left: auto;
     margin-right: auto;
