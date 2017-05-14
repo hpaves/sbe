@@ -47,7 +47,7 @@
 		    $id=mysqli_real_escape_string($connect,$row['id']);
 		    echo "<div class='tableblob'><table><tr>";
 		    echo "<td class='nimetus'>" . htmlspecialchars($row['Nimetus']) . '</td>';
-		    echo "<td class='kirjeldus'>" . htmlspecialchars($row['Kirjeldus']) . '</td>';
+		    echo nl2br("<td class='kirjeldus'>" . htmlspecialchars($row['Kirjeldus']) . '</td>');
 		    echo "<td class='hind'>" . htmlspecialchars($row['Hind']) . ' €' . '</td>';
 		    echo "<td class='pilt'><img src='images/" . htmlspecialchars($row['Pildinimi']) . "' alt=' " . htmlspecialchars($row["id"]) . " '></td>";
 		    echo "<td class='tehniline'><input type='hidden' name='checkbox[]' value='0'></td>";
