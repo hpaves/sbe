@@ -31,19 +31,20 @@
 	//3.1.4 if the user is logged in...
 	if (isset($_SESSION['username'])){
 	$username = mysqli_real_escape_string($connect, $_SESSION['username']);
-	header("Location: ?p=add");
+	header("Location: ?p=view");
 	 
-	} else {
-	header("Location: ");
-	}
+	} else { 
+
 ?>
-<div class="center">
-	<form action="?p=login" method="post">
-		<input class="form" type="text" name="username" placeholder="kasutajanimi" /><br />
-		<input class="form" type="password" name="password" placeholder="parool" /><br />
-		<input type="submit" value="Logi sisse" name="submit"/>
-	</form>
-</div>
+	<div class="center">
+		<form action="?p=login" method="post">
+			<input class="form" type="text" name="username" placeholder="kasutajanimi" /><br />
+			<input class="form" type="password" name="password" placeholder="parool" /><br />
+			<input type="submit" value="Logi sisse" name="submit"/>
+		</form>
+	</div>
 <?php
+
+	}
  
 ?>

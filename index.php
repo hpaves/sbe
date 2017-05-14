@@ -28,7 +28,7 @@ switch ($page) {
 		require("logout.php");
 		break;
 	default:
-		require("login.php");
+		require("view.php");
 		break;
 }
 

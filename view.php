@@ -27,5 +27,5 @@
 
 	    echo '<p class="center">Kui võrgurakendus tundub väga kole, siis see on mõeldud kasutamiseks back endina näiteks sellises kontekstis: <a href="http://enos.itcollege.ee/~hpaves/startbootstrap-creative-gh-pages/">http://enos.itcollege.ee/~hpaves/startbootstrap-creative-gh-pages/</a></p>
 	    	<p>Antud näidislehe (mis pärineb <a href="https://blackrockdigital.github.io/startbootstrap-creative/">siit</a>) CSS vajab küll samade külgede vahekorraga pilte, kuid mõtte näitab ära.</p>
-	    	<p>JS kasutus on täiesti minimaalne, sest JS ja PHP sidumise lahendusi me loengus ei käsitlenud ja üleüldse tundus erinevaid näiteid uurides serveripoolse ja kliendipoolse keele segamine üks suur turvarisk.</p>';
+	    	<p>JS kasutus on täiesti minimaalne, sest JS ja PHP sidumise lahendusi me loengus ei käsitlenud ja üleüldse tundus see erinevaid näiteid uurides üks suur turvarisk.</p>';
 		 ?>
