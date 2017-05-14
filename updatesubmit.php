@@ -15,7 +15,7 @@
     if (mysqli_query($connect, $sql)) {
 		echo "<p>Kirje andmebaasi edukalt lisatud.</p>";
 		} else {
-			echo "Error: " . $sql . "<br>" . mysqli_error($connect);
+			
 		}
 	mysqli_close($connect);
 ?>
