@@ -36,7 +36,7 @@
 			    echo "<label>Hind:</label>";
 			    echo "<input class='form' type='number' name='Hind' min='0' required value='".htmlspecialchars($row['Hind'])."'><br><br>";
 
-			    echo "<img src='images/" . htmlspecialchars($row['Pildinimi']) . "' alt='" . htmlspecialchars($row["id"]) . " '><br>";
+			    echo "<div class='form'><img src='images/" . htmlspecialchars($row['Pildinimi']) . "' alt='" . htmlspecialchars($row["id"]) . " '></div><br>";
 
 			    echo "<input type='hidden' name='id' value='".htmlspecialchars($row["id"])."'>";
 
