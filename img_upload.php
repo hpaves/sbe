@@ -3,7 +3,7 @@
 <?php $allowedExts = array("jpg", "jpeg", "png");
 $allowedTypes = array("image/jpeg", "image/png", "image/pjpeg");
 $extension = end((explode(".", $_FILES['pilt']["name"])));
-$bytes= 1000000;
+$bytes= 2000000;
 $loc = "images";
 
 if (in_array($_FILES['pilt']["type"], $allowedTypes) && ($_FILES['pilt']["size"] < $bytes) && in_array($extension, $allowedExts) ) {
