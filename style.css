@@ -37,8 +37,14 @@ form {
     margin: 0 auto;
 }
 
-input.form, textarea {
+input.form {
     width: 100%;
+    clear: both;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
     clear: both;
 }
 

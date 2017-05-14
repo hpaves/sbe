@@ -19,7 +19,6 @@
 		    echo "<td class='kirjeldus'>" . htmlspecialchars($row['Kirjeldus']) . '</td>';
 		    echo "<td class='hind'>" . htmlspecialchars($row['Hind']) . ' €' . '</td>';
 		    echo "<td class='pilt'><img src='images/" . htmlspecialchars($row['Pildinimi']) . "' alt=' " . htmlspecialchars($row["id"]) . " '></td>";
-		    echo "<td class='id'>" . htmlspecialchars($row["id"]) . "</td>";
 		    echo "</tr></table></div>";
 
 		}
