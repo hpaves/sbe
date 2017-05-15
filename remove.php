@@ -50,7 +50,6 @@
 		    echo nl2br("<td class='kirjeldus'>" . htmlspecialchars($row['Kirjeldus']) . '</td>');
 		    echo "<td class='hind'>" . htmlspecialchars($row['Hind']) . ' €' . '</td>';
 		    echo "<td class='pilt'><img src='images/" . htmlspecialchars($row['Pildinimi']) . "' alt=' " . htmlspecialchars($row["id"]) . " '></td>";
-		    echo "<td class='tehniline'><input type='hidden' name='checkbox[]' value='0'></td>";
 		    echo "<td class='linnuke'><input type='checkbox' name='checkbox[]' value='$id'>";
 		    echo "</tr></table></div>";
 
