@@ -1,5 +1,5 @@
-# sbe
-Simple Back End
+# SBE 
+ehk Simple Back End
 
 Kui võrgurakendus tundub väga kole, siis see on mõeldud kasutamiseks back endina. Sellel lehel ei peagi mitte miski olema sisse logimata nähtav. Vaatamise päringu saab lisada front endi, näiteks sellises kontekstis: <a href="http://enos.itcollege.ee/~hpaves/startbootstrap-creative-gh-pages/">http://enos.itcollege.ee/~hpaves/startbootstrap-creative-gh-pages/</a>
 
