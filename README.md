@@ -6,3 +6,5 @@ Kui võrgurakendus tundub väga kole, siis see on mõeldud kasutamiseks back end
 Antud näidislehe CSS vajab küll samade külgede vahekorraga pilte, niisiis konkreetset näidet on lihtne lõhkuda, kuid mõtte näitab ära.
 
 JS kasutus on täiesti minimaalne, sest JS ja PHP sidumise lahendusi me loengus ei käsitlenud ja üleüldse tundus see erinevaid näiteid uurides üks suur turvarisk (XXS ründed).
+
+Retsenseerijale: sisse saab logida kasutajaga test ning parool on samuti test
