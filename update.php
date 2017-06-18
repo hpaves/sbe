@@ -28,7 +28,7 @@
 	    mysqli_close($connect);
 
 	    echo '<br><div class="text-center">
-				<input class="text-center btn btn-info" name="update" type="SUBMIT" id="update" value="Muuda valitud toodet!">
+				<input class="text-center btn btn-primary" name="update" type="SUBMIT" id="update" value="Muuda valitud toodet!">
 			</div>
 	    </form>';
 
