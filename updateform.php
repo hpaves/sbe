@@ -40,7 +40,7 @@
 
 			    echo "<input type='hidden' name='id' value='".htmlspecialchars($row["id"])."'>";
 
-			    echo "<button type='submit'>Uuenda kirjet!</button>
+			    echo "<button class='text-center btn btn-primary' type='submit'>Uuenda kirjet!</button>
 				</form>
 			</div>";
 

@@ -1,6 +1,6 @@
 <?php require 'sessioncheck.php'; ?>
 <?php include 'menu.php'; ?>
-<?php $allowedExts = array("jpg", "jpeg", "png", "gif");
+<?php $allowedExts = array("jpg", "jpeg", "png", "gif", "JPG", "JPEG", "PNG", "GIF");
 $allowedTypes = array("image/jpeg", "image/png", "image/pjpeg", "image/gif");
 $extension = end((explode(".", $_FILES['pilt']["name"])));
 $bytes= 2000000;
