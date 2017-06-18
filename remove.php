@@ -33,7 +33,7 @@
 
 		    } /* END OF FOR LOOP */
 
-		    echo "<p>Kustutati $deletioncounter kirjet.</p>";
+		    echo "<h2 class='text-center'>Kustutati $deletioncounter kirjet.</h2>";
 
 		} /* END OF ISSET DELETE */
 
@@ -45,19 +45,19 @@
 		while ($row = mysqli_fetch_array($result)){ /* FETCH ARRAY */
 
 		    $id=mysqli_real_escape_string($connect,$row['id']);
-		    echo "<div class='tableblob'><table><tr>";
-		    echo "<td class='nimetus'>" . htmlspecialchars($row['Nimetus']) . '</td>';
-		    echo nl2br("<td class='kirjeldus'>" . htmlspecialchars($row['Kirjeldus']) . '</td>');
-		    echo "<td class='hind'>" . htmlspecialchars($row['Hind']) . ' €' . '</td>';
-		    echo "<td class='pilt'><img src='images/" . htmlspecialchars($row['Pildinimi']) . "' alt=' " . htmlspecialchars($row["id"]) . " '></td>";
-		    echo "<td class='linnuke'><input type='checkbox' name='checkbox[]' value='$id'>";
+		    echo "<div class='tableblob'><table class='table table-striped'><tr>";
+		    echo "<td class='d-inline-block col-2'>" . htmlspecialchars($row['Nimetus']) . '</td>';
+		    echo nl2br("<td class='d-inline-block col-5'>" . htmlspecialchars($row['Kirjeldus']) . '</td>');
+		    echo "<td class='d-inline-block col-1 text-center'>" . htmlspecialchars($row['Hind']) . ' €' . '</td>';
+		    echo "<td class='d-inline-block col-3'><img src='images/" . htmlspecialchars($row['Pildinimi']) . "' alt=' " . htmlspecialchars($row["id"]) . " '></td>";
+		    echo "<td class='d-inline-block col-1 text-center'><input type='checkbox' name='checkbox[]' value='$id'>";
 		    echo "</tr></table></div>";
 
 		}
 	    mysqli_close($connect);
 
-	    echo '<br><div class="center">
-				<input class="center" name="delete" type="SUBMIT" id="delete" value="Kustuta valitud!">
+	    echo '<br><div class="text-center">
+				<input class="text-center btn btn-danger" name="delete" type="SUBMIT" id="delete" value="Kustuta valitud!">
 			</div>
 	    </form>';
 

@@ -14,11 +14,12 @@
 		while ($row = mysqli_fetch_array($result)){ /* FETCH ARRAY */
 
 		    $id=mysqli_real_escape_string($connect,$row['id']);
-		    echo "<div class='tableblob'><table><tr>";
-		    echo "<td class='nimetus'>" . htmlspecialchars($row['Nimetus']) . '</td>';
-		    echo nl2br("<td class='kirjeldus'>" . htmlspecialchars($row['Kirjeldus']) . '</td>');
-		    echo "<td class='hind'>" . htmlspecialchars($row['Hind']) . ' €' . '</td>';
-		    echo "<td class='pilt'><img src='images/" . htmlspecialchars($row['Pildinimi']) . "' alt=' " . htmlspecialchars($row["id"]) . " '></td>";
+		    echo "<div class='tableblob'><table class='table table-striped'><tr>";
+		    echo "<td class='d-inline-block col-2'>" . htmlspecialchars($row['Nimetus']) . '</td>';
+		    echo nl2br("<td class='d-inline-block col-5'>" . htmlspecialchars($row['Kirjeldus']) . '</td>');
+		    echo "<td class='d-inline-block col-1 text-center'>" . htmlspecialchars($row['Hind']) . ' €' . '</td>';
+		    echo "<td class='d-inline-block col-3'><img src='images/" . htmlspecialchars($row['Pildinimi']) . "' alt=' " . htmlspecialchars($row["id"]) . " '></td>";
+		    echo "<td class='d-inline-block col-1'> </td>";
 		    echo "</tr></table></div>";
 
 		}

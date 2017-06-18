@@ -36,13 +36,17 @@
 	} else { 
 
 ?>
-	<div class="center">
+<div class="text-center"><h1 class="branding">Simple Back End</h1></div>
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4 col-sm-offset-4">
 		<form action="?p=login" method="post">
-			<input class="form" type="text" name="username" placeholder="kasutajanimi" /><br />
-			<input class="form" type="password" name="password" placeholder="parool" /><br />
-			<input type="submit" value="Logi sisse" name="submit"/>
+			<input class="form-control" type="text" name="username" placeholder="kasutajanimi" /><br />
+			<input class="form-control" type="password" name="password" placeholder="parool" /><br />
+			<input type="submit" class="btn btn-secondary" value="Logi sisse" name="submit"/>
 		</form>
 	</div>
+</div>
 <?php
 
 	}

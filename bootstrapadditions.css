@@ -1,0 +1,23 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+}
+
+.table > tbody > tr > td {
+     vertical-align: middle;
+}
+
+.branding {
+    font-family: 'Berkshire Swash';
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
